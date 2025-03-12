@@ -66,7 +66,7 @@ class Fahrzeug {
         motorLaeuft = false;
         System.out.println("Du hast den Motor aus gemacht.");
     }
-    
+    // setter Methode; fuellstand wird auf 1 gesetzt (voller Tank)
     public void tanken() {
         if(fuellstand < 0.8) {
             getankterSprit = (1 - fuellstand) * 10;
@@ -138,7 +138,7 @@ class Auto extends Fahrzeug {
 //Motorrad-Klasse erbt auch von Fahrzeug
 class Motorrad extends Fahrzeug {
     private int motorGroesse; // motorGroesse = cc
-    // fahrtzeit-Variable wurde in die Basisklasse verschoben
+   
 
     // Konstruktor
     public Motorrad(String marke, String modell, int baujahr, String farbe, int motorGroesse, double fuellstand) {
